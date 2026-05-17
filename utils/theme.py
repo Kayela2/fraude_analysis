@@ -68,6 +68,8 @@ def inject_css(t: dict) -> None:
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap');
 html, body, [class*="css"] {{ font-family: 'Inter', sans-serif !important; }}
 [data-testid="stSidebarNav"] {{ display: none !important; }}
+[data-testid="stHeader"] {{ display: none !important; }}
+[data-testid="stToolbar"] {{ display: none !important; }}
 .stApp {{ background: {t['bg']} !important; }}
 .block-container {{ padding: 1.5rem 2rem !important; max-width: 100% !important; }}
 [data-testid="stSidebar"] {{
